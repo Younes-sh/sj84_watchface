@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
 const helmet = require('helmet');
-// const config = require('config');
+const config = require('config');
+const dotenv = require('dotenv');
+dotenv.config();
+
 const mongoose = require('mongoose');
 const userRouter = require('./src/routers/user');
 const itemRouter = require('./src/routers/item');
@@ -14,7 +17,6 @@ const confirmComment = require('./src/routers/ConfirmComment');
 const SocialMedia = require('./src/routers/socialMedia');
 
 const cors = require('cors')
-// const port = require(config.get('port'))
 var bodyParser = require('body-parser')
 
 
@@ -50,9 +52,12 @@ app.use(function (req, res) {
 
 // Connect to MongoDB
 
-mongoose.connect("mongodb+srv://sheikhlaryounes:2KWbIGZqgcyZqEHi@watch.ww1vfpo.mongodb.net/")
-.then(() => console.log('connected to MongoDB'))
-.catch((err) => console.log('error to connect'))
+// mongoose.connect("mongodb+srv://sheikhlaryounes:2KWbIGZqgcyZqEHi@watch.ww1vfpo.mongodb.net/")
+// .then(() => console.log('connected to MongoDB'))
+// .catch((err) => console.log('error to connect'))
+
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('Connected to MongoDB')).catch((err) => console.error('Error connecting to MongoDB:', err));
+
 
 const port = process.env.PORT || 5000 ;
 
