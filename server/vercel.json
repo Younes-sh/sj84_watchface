@@ -1,10 +1,16 @@
 {
+    "version": 2,
     "build": {
       "env": {
         "YOUR_ENV_VARIABLE": "some-value"
       },
-      "command": "npm run build",
       "functions": "api/**/*.js"
-    }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
   }
   
