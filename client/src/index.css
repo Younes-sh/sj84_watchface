@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* NAVBAR */
+.NAVBAR {
+  z-index: 9;
+}
+
+.NAVBAR .active {
+  border-bottom: solid 2px #ccc;
+  
+}
+
+/* Collection Page */
+.Collection {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.Collection  .Background {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  position: fixed;
+}
+
+.Collection .Main {
+  width: 100%;
+  height: 100%; /* ارتفاع بازمانده برای حالت کامپیوتر */
+  top: 0;
+  z-index: 2;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .Collection .Main  {
+    height: auto; /* ارتفاع خودکار برای حالت موبایل */
+  }
+}
+
+
+
+/* CardSmall */
+
+.ImageCardSmall {
+  clip-path: polygon(0 9%, 100% 9%, 100% 86%, 0 86%);
+  border-radius: 20px;
+}
+
+
+/* Landing page */
+
+.LandingPage {
+  width: 100%;
+  height: 100%  ; /* Fallback for browsers do NOT support vh unit */
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(72, 21, 153); */
+  position: absolute;
+  z-index: 1;
+  position: fixed;
+}
+.content div {
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+}
+.content .container-divs {
+  position: relative;
+}
+.content .DIV-1 {
+  width: 300px;
+  height: 300px;
+  margin: 0 -920px;
+  background-color: brown;
+  filter: blur(30px);
+  animation: DIV-1 infinite 15s forwards alternate; 
+}
+@keyframes DIV-1 {
+  0% {margin: 15% 50%};
+  25% {margin: 20% 0%};
+  50% {margin: 5% 30%};
+  70% {margin: 15% 50%};
+  100% {margin: 15% 20%};
+}
+
+.content .DIV-2 {
+  width: 400px;
+  height: 400px;
+  margin: -400px 70px;
+  background-color: rgb(75, 145, 28);
+  filter: blur(30px);
+  animation:  DIV-2 infinite 20s  alternate; 
+}
+@keyframes DIV-2 {
+  0% {margin: 20% 0%};
+  50% {margin: 15% 50%};
+  1000% {margin: 5% 30%};
+}
+
+.content .DIV-3 {
+  width: 300px;
+  height: 300px;
+  margin: 600px -600px;
+  background-color: rgb(141, 28, 145);
+  filter: blur(30px);
+  animation: DIV-2 infinite 15s  alternate ; 
+}
+@keyframes DIV-3 {
+    0% {margin: 0% 160%}
+    25% {margin: 10% 20%}
+    50% {margin: 5% 40%}
+    70% {margin: 25% 10%}
+    100% {margin: 5% 50%}
+}
+
+
+.GlaceMorphism {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  background: rgba( 255, 255, 255, 0.6 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+}
+
+/* RegisterLogin page parent */
+
+.parentRegisterLogin {
+  width: 100%;
+  height: 100vh;
+  /* background-image: is inline on register component */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container-btn .active{
+  background-color: #268181;
+}
+.button-91 {
+  color: #fff;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+
+
+/* Gallery Link style */
+.Gallery {
+  width: 100%;
+  height:auto ;
+  position: relative;
+
+}
+.containerImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.Gallery .content-image{
+  width: 100%;
+  height:100% ;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  filter: blur(5px);
+}
+.Gallery .content-element{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  /* Outlet Item All , Apple , Samsung */
+  
+  
+}
+
+
+.h-auto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- */
+
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+
+.container-button-gallery .active:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+/* Facer iframe */
+
+.facer {
+  margin-top: -44px;
+}
+
+/* View item */
+.viewItemLogo{
+  border-radius: 0 5px 5px 0;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.466);
+  border-top: solid 1px rgba(128, 128, 128, 0.466);
+  border-right: solid 1px rgba(128, 128, 128, 0.466);
+}
