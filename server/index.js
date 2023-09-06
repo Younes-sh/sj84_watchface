@@ -26,7 +26,7 @@ app.use(cors())
 app.use(helmet());
  
 // تعریف مسیر استاتیک برای فایل‌های React.js
-app.use(express.static(path.join(__dirname, 'my-react-app/build')));
+// app.use(express.static(path.join(__dirname, 'my-react-app/build')));
 
 app.use('/api/users' , userRouter);
 app.use('/api/items' , itemRouter);
