@@ -56,7 +56,7 @@ app.use(function (req, res) {
 // .then(() => console.log('connected to MongoDB'))
 // .catch((err) => console.log('error to connect'))
 
-const databaseUrl = process.env.DATABASE_URL;
+const databaseUrl = process.env.DATABASE_URI;
 mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
