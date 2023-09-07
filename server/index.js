@@ -56,7 +56,15 @@ app.use(function (req, res) {
 // .then(() => console.log('connected to MongoDB'))
 // .catch((err) => console.log('error to connect'))
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('Connected to MongoDB')).catch((err) => console.error('Error connecting to MongoDB:', err));
+const databaseUrl = process.env.DATABASE_URL;
+mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB');
+    // Your code here
+  })
+  .catch(error => {
+    console.error('Error connecting to MongoDB:', error.message);
+  });
 
 
 const port = process.env.PORT || 5000 ;
