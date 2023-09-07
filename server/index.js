@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const helmet = require('helmet');
-const config = require('config');
+// const config = require('config');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -22,8 +22,12 @@ var bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+const corsOptions = {
+  origin: 'http://localhost:3000', // آدرس فرانت‌اند React.js
+};
 
-app.use(cors())
+
+app.use(cors(corsOptions))
 // تنظیمات امنیتی با استفاده از Helmet
 app.use(helmet());
  
