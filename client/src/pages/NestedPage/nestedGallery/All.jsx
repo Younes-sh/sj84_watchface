@@ -7,12 +7,26 @@ const All = () => {
   const [items, setItems] = useState([]);
   const [pageNumber, setPageNumber] = useState(0); // شماره صفحه فعلی
   const itemsPerPage = 24; // تعداد آیتم‌ها در هر صفحه
+  const apiUrl = process.env.REACT_APP_API_URL;
+
+  // useEffect(() => {
+  //   fetch('http://localhost:5000/api/items')
+  //     .then(res => res.json())
+  //     .then(res => setItems(res.data));
+  // }, []);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/items')
-      .then(res => res.json())
-      .then(res => setItems(res.data));
-  }, []);
+    // ارسال درخواست به بک‌اند و دریافت لیست کاربران
+    fetch(`${apiUrl}/items`)
+      .then(response => response.json())
+      .then(data => {
+        setItems(data); // تنظیم لیست کاربران
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
+
 
   const pageCount = Math.ceil(items.length / itemsPerPage); // تعداد کل صفحات
 
