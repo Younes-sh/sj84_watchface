@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CardSmall from '../../../Components/CardSmall';
 import ReactPaginate from 'react-paginate';
 import './all.css'
-const apiUrl = env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const All = () => {
   const [items, setItems] = useState([]);
