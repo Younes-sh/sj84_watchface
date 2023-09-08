@@ -1,12 +1,12 @@
 import {useState , useEffect} from 'react';
 import CardCollection from '../Components/CardCollection';
-import useFetch from '../CustomHooks/useFetch';
 
 const Collection = () => {
   const [ items , setItems ] = useState([])
 
+  const URL = process.env.REACT_APP_API_URL
   useEffect(() => {
-    fetch('http://localhost:5000/api/collections')
+    fetch(`${URL}/api/collections`)
     .then(res => res.json())
     .then(res => setItems(res.data))
   }, [])

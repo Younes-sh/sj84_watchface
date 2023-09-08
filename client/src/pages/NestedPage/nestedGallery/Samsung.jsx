@@ -7,8 +7,10 @@ const Samsung = () => {
   const [pageNumber, setPageNumber] = useState(0); // شماره صفحه فعلی
   const itemsPerPage = 24; // تعداد آیتم‌ها در هر صفحه
 
+  var URL = process.env.REACT_APP_API_URL
+  
   useEffect(() => {
-      fetch('http://localhost:5000/api/items')
+      fetch(`${URL}/api/items`)
           .then(res => res.json())
           .then(res => setItems(res.data));
   }, []);
@@ -40,7 +42,7 @@ const Samsung = () => {
                       pageNumber * itemsPerPage,
                       (pageNumber + 1) * itemsPerPage
                   )
-                  .map(item => <CardSmall key={item.id} {...item} />)}
+                  .map(item => <CardSmall key={item._id} {...item} />)}
           </div>
 
           <div className='pagination-container'>

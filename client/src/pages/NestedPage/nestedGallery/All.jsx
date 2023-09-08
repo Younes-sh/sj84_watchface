@@ -1,27 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CardSmall from '../../../Components/CardSmall';
 import ReactPaginate from 'react-paginate';
-import './all.css'
-const apiUrl = process.env.REACT_APP_API_URL;
+import './all.css';
+
 
 const All = () => {
   const [items, setItems] = useState([]);
   const [pageNumber, setPageNumber] = useState(0); // شماره صفحه فعلی
   const itemsPerPage = 24; // تعداد آیتم‌ها در هر صفحه
-
+  
+  var URL = process.env.REACT_APP_API_URL
 
 
   useEffect(() => {
     // ارسال درخواست به بک‌اند و دریافت لیست کاربران
-    fetch(`${apiUrl}/api/items`)
-      .then(response => response.json())
-      .then(response => {
-        setItems(response.data); // تنظیم لیست کاربران
+    fetch(`${URL}/api/items`)
+      .then(res => res.json())
+      .then(res => {
+        setItems(res.data); // تنظیم لیست کاربران
       })
       .catch(error => {
         console.error('Error:', error);
       });
   }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
+
+
 
 
   const pageCount = Math.ceil(items.length / itemsPerPage); // تعداد کل صفحات
@@ -32,6 +35,7 @@ const All = () => {
 
   return (
     <div className='pt-5'>
+   
       <div className='pagination-container'>
         <ReactPaginate
           previousLabel={"Previous"}
