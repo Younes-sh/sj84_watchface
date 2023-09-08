@@ -4,6 +4,7 @@ const helmet = require('helmet');
 // const config = require('config');
 const dotenv = require('dotenv');
 dotenv.config();
+const cors = require('cors')
 
 const mongoose = require('mongoose');
 const userRouter = require('./src/routers/user');
@@ -16,18 +17,19 @@ const commentRouter = require('./src/routers/Comment');
 const confirmComment = require('./src/routers/ConfirmComment');
 const SocialMedia = require('./src/routers/socialMedia');
 
-const cors = require('cors')
 var bodyParser = require('body-parser')
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+
+// تنظیمات CORS
 const corsOptions = {
-  origin: 'http://localhost:3000', // آدرس فرانت‌اند React.js
+  origin: 'http://localhost:3000', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
+  methods: 'GET, POST, PUT, DELETE', // متدهای HTTP مجاز
+  credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
-
-
-
 
 app.use(cors(corsOptions))
 // تنظیمات امنیتی با استفاده از Helmet
