@@ -27,6 +27,8 @@ const corsOptions = {
 };
 
 
+
+
 app.use(cors(corsOptions))
 // تنظیمات امنیتی با استفاده از Helmet
 app.use(helmet());
