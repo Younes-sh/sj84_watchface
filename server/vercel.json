@@ -1,16 +1,20 @@
 {
-    "routes": [
-      {
-        "src": "/api/.*",
-        "dest": "/api/index.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/$1.html"
-      }
-    ],
-    "env": {
-      "MY_VARIABLE": "my-value"
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend",    
+      "use": "@vercel/node"   
     }
-  }
-  
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",  
+      "dest": "http://localhost:3000/$1", 
+      "methods": ["GET", "POST", "PUT", "DELETE"]  
+    },
+    {
+      "src": "/(.*)",  
+      "dest": "frontend/$1"  
+    }
+  ]
+}
