@@ -1,7 +1,4 @@
 {
-    "build": {
-      "src": "path/to/your/react/app", 
-      "output": "build" 
-    }
-  }
-  
+  "buildCommand": "next build",
+  "cleanUrls": true
+}
