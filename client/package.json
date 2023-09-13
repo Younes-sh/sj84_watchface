@@ -35,8 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "webpack --env.BACK_END_PORT=http://localhost:5000 --config webpack.config.dev.js",
-    "build": "webpack --env.BACK_END_PORT=https://localhost:5000  --config webpack.config.build.js",
+    "build": "react-scripts build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
