@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --plugins transform-react-jsx --presets es2015",
-    "bundle": "./node_modules/browserify/bin/cmd.js lib/client.js -o public/js/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " nodemon index.js",
-    "dev":"nodemon index.js"
+    "start": "nodemon index.js",
+    "dev":"nodemon index.js",
+    "build":"npm run build"
   },
   "repository": {
     "type": "git",
