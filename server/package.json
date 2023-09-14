@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "dev":"nodemon index.js",
-    "build":"npm run build"
+    "dev": "nodemon index.js",
+    "build": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,8 @@
     "mongoose": "^7.4.2",
     "mongoose-timestamp": "^0.6.0",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.5"
   }
 }
