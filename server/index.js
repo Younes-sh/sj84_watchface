@@ -31,7 +31,14 @@ const corsOptions = {
   credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
 
-app.use(cors(corsOptions))
+// app.use(cors(corsOptions))
+app.use(cors (
+  {
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST","GET","PUT","DELETE"],
+    credentials: true
+  }
+))
 
 // تنظیمات امنیتی با استفاده از Helmet
 app.use(helmet());
