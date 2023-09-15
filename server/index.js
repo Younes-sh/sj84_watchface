@@ -34,7 +34,7 @@ const corsOptions = {
 // app.use(cors(corsOptions))
 app.use(cors (
   {
-    origin: ["https://vercel.com/younessheikhlar-gmailcom/sj84-watchface"],
+    origin: ["https://sj84-watchface.vercel.app"],
     methods: ["POST","GET","PUT","DELETE"],
     credentials: true
   }
