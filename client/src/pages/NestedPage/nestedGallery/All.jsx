@@ -12,18 +12,7 @@ const All = () => {
   var URL = process.env.REACT_APP_API_URL
 
 
-  useEffect(() => {
-    // ارسال درخواست به بک‌اند و دریافت لیست کاربران
-    fetch(`${URL}/api/items`)
-      .then(res => res.json())
-      .then(res => {
-        setItems(res.data); // تنظیم لیست کاربران
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
-
+ddddfs
 
 
 
