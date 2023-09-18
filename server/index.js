@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 
 // تنظیمات CORS
 const corsOptions = {
-  origin: 'http://localhost:3000', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
+  origin: 'https://sj84-watchface.vercel.app/', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
   methods: 'GET, POST, PUT, DELETE', // متدهای HTTP مجاز
   credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
