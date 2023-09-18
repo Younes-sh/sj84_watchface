@@ -4,12 +4,17 @@ import CardCollection from '../Components/CardCollection';
 const Collection = () => {
   const [ items , setItems ] = useState([])
 
-  const URL = process.env.REACT_APP_API_URL
   useEffect(() => {
+    // ارسال درخواست به بک‌اند و دریافت لیست کاربران
     fetch(`${URL}/api/collections`)
-    .then(res => res.json())
-    .then(res => setItems(res.data))
-  }, [])
+      .then(res => res.json())
+      .then(res => {
+        setItems(res.data); // تنظیم لیست کاربران
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
 
   return (
     <div className='Collection pt-5'>
