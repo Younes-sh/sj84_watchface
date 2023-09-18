@@ -11,11 +11,6 @@ const All = () => {
   
   var URL = process.env.REACT_APP_API_URL
 
-
-ddddfs
-
-
-
   const pageCount = Math.ceil(items.length / itemsPerPage); // تعداد کل صفحات
 
   const handlePageClick = ({ selected }) => {
