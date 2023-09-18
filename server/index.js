@@ -31,7 +31,9 @@ const corsOptions = {
   credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
 
-// app.use(cors(corsOptions))
+app.use(cors());
+
+app.use(cors(corsOptions))
 app.use(cors (
   {
     origin: ["https://sj84-watchface.vercel.app"],
