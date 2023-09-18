@@ -1,3 +1,4 @@
 {
-    "framework": "reactjs"
+    "framework": "reactjs",
+    "outputDirectory": "build"
 }
