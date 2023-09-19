@@ -2,6 +2,8 @@ process.env.NODE_ENV = "production";
 const express = require('express');
 const app = express();
 const cors = require('cors')
+const path = require('path');
+
 
 const mongoose = require('mongoose');
 const userRouter = require('./src/routers/user');
