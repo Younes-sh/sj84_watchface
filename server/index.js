@@ -28,12 +28,9 @@ const corsOptions = {
   methods: 'GET, POST, PUT, DELETE', // متدهای HTTP مجاز
   credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
-
-
-// تنظیمات امنیتی با استفاده از Helmet
  
 // تعریف مسیر استاتیک برای فایل‌های React.js
-// app.use(express.static(path.join(__dirname, 'my-react-app/build')));
+app.use(express.static(path.join(__dirname, 'my-react-app/build')));
 
 app.use('/api/users' , userRouter);
 app.use('/api/items' , itemRouter);
