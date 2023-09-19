@@ -62,7 +62,7 @@
   },
   "react-dotenv": {
     "whitelist": [
-      "BACK_END_PORT"
+      "REACT_APP_URL_API"
     ]
   }
 }
