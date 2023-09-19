@@ -3,6 +3,7 @@ import CardCollection from '../Components/CardCollection';
 
 const Collection = () => {
   const [ items , setItems ] = useState([])
+  const URL = process.env.REACT_APP_URL_API;
 
   useEffect(() => {
     // ارسال درخواست به بک‌اند و دریافت لیست کاربران
