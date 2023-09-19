@@ -1,10 +1,6 @@
 process.env.NODE_ENV = "production";
 const express = require('express');
 const app = express();
-const helmet = require('helmet');
-const config = require('config');
-const dotenv = require('dotenv');
-dotenv.config();
 const cors = require('cors')
 
 const mongoose = require('mongoose');
@@ -18,7 +14,6 @@ const commentRouter = require('./src/routers/Comment');
 const confirmComment = require('./src/routers/ConfirmComment');
 const SocialMedia = require('./src/routers/socialMedia');
 
-var bodyParser = require('body-parser')
 
 
 
@@ -36,7 +31,6 @@ const corsOptions = {
 
 
 // تنظیمات امنیتی با استفاده از Helmet
-app.use(helmet());
  
 // تعریف مسیر استاتیک برای فایل‌های React.js
 // app.use(express.static(path.join(__dirname, 'my-react-app/build')));
@@ -55,11 +49,11 @@ app.get('/' , (req , res) => {
     res.send('Hello world')
 })
 
-app.use(function (req, res) {
-    res.setHeader('Content-Type', 'text/plain')
-    res.write('you posted:\n')
-    res.end(JSON.stringify(req.body, null, 2))
-})
+// app.use(function (req, res) {
+//     res.setHeader('Content-Type', 'text/plain')
+//     res.write('you posted:\n')
+//     res.end(JSON.stringify(req.body, null, 2))
+// })
 
 // Connect to MongoDB
 const databaseUrl = process.env.DATABASE_URI;
