@@ -6,8 +6,8 @@ const path = require('path');
 
 
 const mongoose = require('mongoose');
-const userRouter = require('./src/routers/user');
-const itemRouter = require('./src/routers/item');
+const userRouter = require('./src/routers/user.js');
+const itemRouter = require('./src/routers/item.js');
 const gifRouter = require('./src/routers/gifwatch');
 const imageRegister = require('./src/routers/backGroundRegister');
 const imageGallery = require('./src/routers/backGroundGallery');
