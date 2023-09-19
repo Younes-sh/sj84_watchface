@@ -11,7 +11,7 @@ const ViewItem = () => {
 
   const URL = process.env.REACT_APP_URL_API
   useEffect(() => {
-    fetch(`${URL}/api/items/${itemID}`)
+    fetch(`${URL}api/items/${itemID}`)
       .then((res) => res.json())
       .then((res) => setItem(res.data))
       .catch((err) => console.log(err));

@@ -11,7 +11,7 @@ const NestedPage = () => {
 
   useEffect(() => {
     // Fetch background image data from API endpoint
-    axios.get(`${URL}/api/imageregister`)
+    axios.get(`${URL}api/imageregister`)
       .then(response => setBackgroundImage(response.data))
       .catch(error => {
         console.error('Error fetching background image:', error);

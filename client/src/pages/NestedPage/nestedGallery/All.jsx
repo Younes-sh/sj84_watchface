@@ -12,7 +12,7 @@ const All = () => {
   var URL = process.env.REACT_APP_API_URL
 
   useEffect(() => {
-    fetch(`${URL}/api/items`)
+    fetch(`${URL}api/items`)
         .then(res => res.json())
         .then(res => setItems(res.data));
 }, []);
