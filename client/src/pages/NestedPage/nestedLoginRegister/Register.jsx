@@ -45,7 +45,6 @@ function Register() {
       username: member.username.toLowerCase()
     };
   
-    axios.post('http://localhost:5000/api/users',member);
     navigate('/registerlogin/login');
   }
 

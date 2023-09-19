@@ -7,10 +7,10 @@ import SocialMedia from '../Components/SocialMedia/DataSocial';
 
 const Contact = () => {
   const [ showcomment , setShowComment] = useState([]);
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const URL = process.env.REACT_APP_URL_API
   
     useEffect(() => {
-      fetch(`${apiUrl}/api/comments`)
+      fetch(`${URL}/api/comments`)
       .then(res => res.json())
       .then(res => setShowComment(res.data))
     },[])

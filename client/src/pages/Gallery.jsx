@@ -6,6 +6,8 @@ import CopyAddress from '../Components/CopyAddress/CopyAddress';
 
 const Gallery = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
+  const URL = process.env.REACT_APP_URL_API
+
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -14,7 +16,7 @@ const Gallery = () => {
 
   useEffect(() => {
     // Fetch background image data from API endpoint
-    axios.get('http://localhost:5000/api/imagegallery')
+    axios.get(`${URL}/api/imagegallery`)
       .then(response => setBackgroundImage(response.data))
       .catch(error => {
         console.error('Error fetching background image:', error);

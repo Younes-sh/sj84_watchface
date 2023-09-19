@@ -7,9 +7,11 @@ const NestedPage = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
   const navigate = useNavigate();
 
+  const URL = process.env.REACT_APP_URL_API
+
   useEffect(() => {
     // Fetch background image data from API endpoint
-    axios.get('http://localhost:5000/api/imageregister')
+    axios.get(`${URL}/api/imageregister`)
       .then(response => setBackgroundImage(response.data))
       .catch(error => {
         console.error('Error fetching background image:', error);
