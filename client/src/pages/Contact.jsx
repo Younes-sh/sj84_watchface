@@ -4,10 +4,10 @@ import {Row,Col} from 'react-bootstrap'
 import Comment from '../Components/Comment/Comment';
 import CardComment from '../Components/Comment/CardComment';
 import SocialMedia from '../Components/SocialMedia/DataSocial';
-const apiUrl = process.env.REACT_APP_API_URL;
 
 const Contact = () => {
   const [ showcomment , setShowComment] = useState([]);
+  const apiUrl = process.env.REACT_APP_API_URL;
   
     useEffect(() => {
       fetch(`${apiUrl}/api/comments`)
