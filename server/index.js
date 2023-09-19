@@ -66,6 +66,6 @@ mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true 
     console.error('Error connecting to MongoDB:', error.message);
   });
 
-const port = process.env.PORT || 5000 ;
+const port = process.env.PORT || 3000 ;
 
 app.listen(port ,  () => console.log(`server running on port: ${port}`));
