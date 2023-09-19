@@ -1,11 +1,10 @@
 import { useState , useEffect } from 'react';
 import CardSocialMedia from './CardSocialMedia';
-import {Row} from 'react-bootstrap';
 const DataSocial = () => {
     const [social , setSocial] = useState([]);
-
+    const URL = process.env.REACT_APP_URL_API;
     useEffect(() => {
-        fetch('http://localhost:5000/api/socialmedias')
+        fetch(`${URL}/api/socialmedias`)
         .then(res => res.json())
         .then(res => setSocial(res.data))
         .catch(err => console.log(err))
