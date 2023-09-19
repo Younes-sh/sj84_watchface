@@ -3,9 +3,39 @@
   "builds": [{
     "src":"./index.js","use":"@vercel/node"
   }],
-  "routes":[{"src": "/(.*)" , "dest":"/"}],
+  "routes": [
+    {
+      "src": "/api/items",
+      "dest": "./src/routers/items.js"
+    },
+    {
+      "src": "/api/users",
+      "dest": "./src/routers/users.js"
+    },
+    {
+      "src": "/api/socialmedia",
+      "dest": "./src/routers/socialmedia.js"
+    },
+    {
+      "src": "/api/Comment",
+      "dest": "./src/routers/Comment.js"
+    },
+    {
+      "src": "/api/ConfirmComment",
+      "dest": "./src/routers/ConfirmComment.js"
+    },
+    {
+      "src": "/api/Collection",
+      "dest": "./src/routers/Collection.js"
+    },
+    {
+      "src": "/api/backGroundGallery",
+      "dest": "./src/routers/backGroundGallery.js"
+    }
+  ],
   "crons": [{
     "path": "/api/cron",
     "schedule": "0 10 * * *"
   }]
+  
 }
