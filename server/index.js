@@ -25,7 +25,7 @@ app.use(express.json());
 // تنظیمات CORS
 
 app.use(cors({
-  origin: 'https://sj84-watchface.vercel.app/', // دامنه‌ی منبع
+  origin: 'https://sj84-watchface.vercel.app', // دامنه‌ی منبع
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
@@ -57,7 +57,7 @@ app.use(function (req, res) {
 // const databaseUrl = process.env.DATABASE_URI;
 
 
-MONGODB_URI = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@watch.ww1vfpo.mongodb.net/`
+MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@watch.ww1vfpo.mongodb.net/`
 
 // تنظیمات اتصال به دیتابیس
 const mongooseOptions = {
