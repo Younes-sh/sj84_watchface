@@ -7,13 +7,19 @@ const Samsung = () => {
   const [pageNumber, setPageNumber] = useState(0); // شماره صفحه فعلی
   const itemsPerPage = 24; // تعداد آیتم‌ها در هر صفحه
 
-  var URL = process.env.REACT_APP_API_URL
+  const URL = process.env.REACT_APP_URL_API;
   
   useEffect(() => {
-      fetch(`${URL}api/items`)
-          .then(res => res.json())
-          .then(res => setItems(res.data));
-  }, []);
+    // ارسال درخواست به بک‌اند و دریافت لیست کاربران
+    fetch(`${URL}api/items`)
+      .then(res => res.json())
+      .then(res => {
+        setItems(res.data); // تنظیم لیست کاربران
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
 
   const samsungItems = items.filter(item => item.category === 'Samsung');
   const pageCount = Math.ceil(samsungItems.length / itemsPerPage); // تعداد کل صفحات
