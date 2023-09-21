@@ -12,12 +12,12 @@
   ],
   "routes": [
     {
-      "src": "./api/items",
-      "dest": "./src/routers/items.js"
+      "src": "/api/items",
+      "dest": "./src/routers/item.js"
     },
     {
       "src": "/api/users",
-      "dest": "./src/routers/users.js"
+      "dest": "./src/routers/user.js"
     },
     {
       "src": "/api/socialmedia",
