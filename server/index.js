@@ -54,8 +54,18 @@ app.use(function (req, res) {
 })
 
 // Connect to MongoDB
-const databaseUrl = process.env.DATABASE_URI;
-mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true })
+// const databaseUrl = process.env.DATABASE_URI;
+
+
+MONGODB_URI = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@watch.ww1vfpo.mongodb.net/`
+
+// تنظیمات اتصال به دیتابیس
+const mongooseOptions = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+};
+
+mongoose.connect(MONGODB_URI, mongooseOptions)
   .then(() => {
     console.log('Connected to MongoDB');
     // Your code here
