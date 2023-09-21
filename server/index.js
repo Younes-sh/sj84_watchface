@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const path = require('path');
-
+require('dotenv').config(); // خواندن مقادیر از فایل .env
 
 const mongoose = require('mongoose');
 const userRouter = require('./src/routers/user');
@@ -25,14 +25,14 @@ app.use(express.json());
 // تنظیمات CORS
 
 const corsOptions = {
-  origin: 'https://sj84-watchface.vercel.app/', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
+  origin: 'http://localhost:3000/', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
   methods: 'GET, POST, PUT, DELETE', // متدهای HTTP مجاز
   credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
 };
 
 app.use(cors(corsOptions));
 // تعریف مسیر استاتیک برای فایل‌های React.js
-app.use(express.static(path.join(__dirname, 'my-react-app/build')));
+// app.use(express.static(path.join(__dirname, 'my-react-app/build')));
 
 app.use('/api/users' , userRouter);
 app.use('/api/items' , itemRouter);
@@ -65,6 +65,7 @@ mongoose.connect(databaseUrl, { useNewUrlParser: true, useUnifiedTopology: true 
     console.error('Error connecting to MongoDB:', error.message);
   });
 
-const port = process.env.PORT || 3000 ;
+
+const port = process.env.PORT || 5000 ;
 
 app.listen(port ,  () => console.log(`server running on port: ${port}`));
