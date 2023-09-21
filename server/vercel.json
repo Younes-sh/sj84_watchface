@@ -10,7 +10,7 @@
       "dest":"/"
     },
     {
-      "src": "/api/items",
+      "src": "/",
       "dest": "./src/routers/items.js"
     },
     {
