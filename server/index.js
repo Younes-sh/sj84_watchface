@@ -24,13 +24,12 @@ app.use(express.json());
 
 // تنظیمات CORS
 
-const corsOptions = {
-  origin: 'http://localhost:3000/', // دامنه‌ای که می‌خواهید به آن اجازه دسترسی دهید
-  methods: 'GET, POST, PUT, DELETE', // متدهای HTTP مجاز
-  credentials: true, // اجازه ارسال کوکیها و هدرهای احراز هویت
-};
+app.use(cors({
+  origin: 'https://sj84-watchface.vercel.app/', // دامنه‌ی منبع
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
+  credentials: true, // اجازه‌ی ارسال کوکی‌ها
+}));
 
-app.use(cors(corsOptions));
 // تعریف مسیر استاتیک برای فایل‌های React.js
 // app.use(express.static(path.join(__dirname, 'my-react-app/build')));
 
