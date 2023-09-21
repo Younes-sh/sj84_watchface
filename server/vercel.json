@@ -6,6 +6,10 @@
   },
   "routes": [
     {
+      "src":"/(.*)",
+      "dest":"/"
+    },
+    {
       "src": "/api/items",
       "dest": "./src/routers/items.js"
     },
