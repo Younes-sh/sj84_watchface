@@ -13,35 +13,10 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/items",
-      "dest": "./src/routers/item"
-    },
-    {
-      "src": "/api/users",
-      "dest": "./src/routers/user"
-    },
-    {
-      "src": "/api/socialMedias",
-      "dest": "./src/routers/socialMedia"
-    },
-    {
-      "src": "/api/comments",
-      "dest": "./src/routers/Comment"
-    },
-    {
-      "src": "/api/confirmcomments",
-      "dest": "./src/routers/ConfirmComment"
-    },
-    {
-      "src": "/api/collections",
-      "dest": "./src/routers/Collection"
-    },
-    {
-      "src": "/api/imagegallery",
-      "dest": "./src/routers/backGroundGallery"
-    }
+  "redirects": [
+    { "source": "./index.js", "destination": "/api/items", "statusCode": 301 },
+    { "source": "./index.js", "destination": "/api/collections", "statusCode": 301 },
+    { "source": "./index.js", "destination": "/api/comments", "statusCode": 301 }
   ]
   
 }
