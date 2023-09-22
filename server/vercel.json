@@ -1,5 +1,47 @@
 {
+  "version":2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination":"/"}
+  ],
+  "routes": [
+    {
+      "src": "/api/items",
+      "dest": "./src/routers/item"
+    },
+    {
+      "src": "/api/users",
+      "dest": "./src/routers/user"
+    },
+    {
+      "src": "/api/socialMedias",
+      "dest": "./src/routers/socialMedia"
+    },
+    {
+      "src": "/api/comments",
+      "dest": "./src/routers/Comment"
+    },
+    {
+      "src": "/api/confirmcomments",
+      "dest": "./src/routers/ConfirmComment"
+    },
+    {
+      "src": "/api/collections",
+      "dest": "./src/routers/Collection"
+    },
+    {
+      "src": "/api/imagegallery",
+      "dest": "./src/routers/backGroundGallery"
+    }
   ]
+  
 }
