@@ -30,11 +30,8 @@ app.use(cors({
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
 
-// تعریف مسیر استاتیک برای فایل‌های React.js
-// app.use(express.static(path.join(__dirname, 'my-react-app/build')));
-
 app.use('/api/users' , userRouter);
-app.use('/api/items' , itemRouter);
+app.use('/' , itemRouter);
 app.use('/api/gifs' , gifRouter);
 app.use('/api/imageregister' , imageRegister);
 app.use('/api/imagegallery', imageGallery);
@@ -43,7 +40,7 @@ app.use('/api/comments' , commentRouter);
 app.use('/api/confirmcomments' , confirmComment);
 app.use('/api/socialMedias', SocialMedia);
 
-app.get('/' , (req , res) => {
+app.get('/api/items' , (req , res) => {
     res.send('Hello world')
 })
 
