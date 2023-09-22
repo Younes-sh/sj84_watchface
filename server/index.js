@@ -59,14 +59,14 @@ app.use('/api/confirmcomments' , confirmComment);
 app.use('/api/socialMedias', SocialMedia);
 
 app.get('/' , (req , res) => {
-    res.send('Hello world')
+  res.send('Hello world')
 })
 
-app.use(function (req, res) {
-    res.setHeader('Content-Type', 'text/plain')
-    res.write('you posted:\n')
-    res.end(JSON.stringify(req.body, null, 2))
-})
+// app.use(function (req, res) {
+//     res.setHeader('Content-Type', 'text/plain')
+//     res.write('you posted:\n')
+//     res.end(JSON.stringify(req.body, null, 2))
+// })
 
 // Connect to MongoDB
 // const databaseUrl = process.env.DATABASE_URI;
