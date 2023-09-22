@@ -24,11 +24,29 @@ app.use(express.json());
 
 // تنظیمات CORS
 
-app.use(cors({
-  origin: 'https://sj84-watchface.vercel.app', // دامنه‌ی منبع
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
-  credentials: true, // اجازه‌ی ارسال کوکی‌ها
-}));
+// app.use(cors({
+//   origin: 'https://sj84-watchface.vercel.app', // دامنه‌ی منبع
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
+//   credentials: true, // اجازه‌ی ارسال کوکی‌ها
+// }));
+
+const allowedOrigins = [
+  'https://sj84-watchface.vercel.app',
+  // دامنه‌های دیگر که مجاز هستند را اضافه کنید
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Access denied by CORS'));
+    }
+  },
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 app.use('/api/users' , userRouter);
 app.use('/api/items' , itemRouter);
