@@ -31,7 +31,7 @@ app.use(cors({
 }));
 
 app.use('/api/users' , userRouter);
-app.use('/' , itemRouter);
+app.use('/api/items' , itemRouter);
 app.use('/api/gifs' , gifRouter);
 app.use('/api/imageregister' , imageRegister);
 app.use('/api/imagegallery', imageGallery);
@@ -40,7 +40,7 @@ app.use('/api/comments' , commentRouter);
 app.use('/api/confirmcomments' , confirmComment);
 app.use('/api/socialMedias', SocialMedia);
 
-app.get('/api/items' , (req , res) => {
+app.get('/' , (req , res) => {
     res.send('Hello world')
 })
 
