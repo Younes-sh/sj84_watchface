@@ -1,22 +1,15 @@
 {
-  "version":2,
-  "rewrites": [
-    { "source": "/(.*)", "destination":"/"}
-  ],
+  "version": 2,
   "builds": [
     {
       "src": "./index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "./api/*.js",
-      "use": "@vercel/node"
     }
   ],
-  "redirects": [
-    { "source": "./index.js", "destination": "/api/items", "statusCode": 301 },
-    { "source": "./index.js", "destination": "/api/collections", "statusCode": 301 },
-    { "source": "./index.js", "destination": "/api/comments", "statusCode": 301 }
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": "/index.js"
+    }
   ]
-  
 }
