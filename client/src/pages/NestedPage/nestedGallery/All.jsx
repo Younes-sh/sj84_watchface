@@ -13,7 +13,7 @@ const All = () => {
 
   useEffect(() => {
     // ارسال درخواست به بک‌اند و دریافت لیست کاربران
-    fetch(`${URL}api/items`)
+    fetch(`${URL}/api/items`)
       .then(res => res.json())
       .then(res => {
         setItems(res.data); // تنظیم لیست کاربران
