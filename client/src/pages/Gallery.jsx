@@ -16,7 +16,7 @@ const Gallery = () => {
 
   useEffect(() => {
     // Fetch background image data from API endpoint
-    axios.get(`${URL}api/imagegallery`)
+    axios.get(`${URL}/api/imagegallery`)
       .then(response => setBackgroundImage(response.data))
       .catch(error => {
         console.error('Error fetching background image:', error);

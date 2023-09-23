@@ -7,7 +7,7 @@ const Collection = () => {
 
   useEffect(() => {
     // ارسال درخواست به بک‌اند و دریافت لیست کاربران
-    fetch(`${URL}api/collections`)
+    fetch(`${URL}/api/collections`)
       .then(res => res.json())
       .then(res => {
         setItems(res.data); // تنظیم لیست کاربران

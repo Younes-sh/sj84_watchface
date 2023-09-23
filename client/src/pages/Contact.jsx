@@ -10,7 +10,7 @@ const Contact = () => {
   const URL = process.env.REACT_APP_URL_API
   
     useEffect(() => {
-      fetch(`${URL}api/comments`)
+      fetch(`${URL}/api/comments`)
       .then(res => res.json())
       .then(res => setShowComment(res.data))
     },[])

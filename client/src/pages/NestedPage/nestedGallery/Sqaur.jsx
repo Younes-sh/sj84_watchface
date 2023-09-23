@@ -9,7 +9,7 @@ const Squar = () => {
   const URL = process.env.REACT_APP_URL_API;
 
   useEffect(() => {
-      fetch(`${URL}api/items`)
+      fetch(`${URL}/api/items`)
           .then(res => res.json())
           .then(res => setItems(res.data));
   }, []);
