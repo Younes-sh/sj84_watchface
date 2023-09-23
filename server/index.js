@@ -25,7 +25,7 @@ app.use(express.json());
 // تنظیمات CORS
 
 app.use(cors({
-  origin: 'https://sj84-watchface.vercel.app/gallery/all', // دامنه‌ی منبع
+  origin: 'https://sj84-watchface.vercel.app', // دامنه‌ی منبع
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // متدهای مجاز
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
