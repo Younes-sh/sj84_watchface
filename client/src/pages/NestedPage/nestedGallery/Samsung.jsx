@@ -31,15 +31,16 @@ const Samsung = () => {
   return (
       <div className='pt-5'>
           <div className='pagination-container'>
-              <ReactPaginate
-                  previousLabel={"Previous"}
-                  nextLabel={"Next"}
-                  pageCount={pageCount}
-                  onPageChange={handlePageClick}
-                  containerClassName={"pagination"}
-                  activeClassName={"active"}
-                  forcePage={pageNumber}
-              />
+          <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+          forcePage={pageNumber}
+          marginPagesDisplayed={2} // تعداد خانه‌های نخست و آخر
+        />
           </div>
 
           <div className="d-flex flex-wrap justify-content-center container">
@@ -52,15 +53,16 @@ const Samsung = () => {
           </div>
 
           <div className='pagination-container'>
-              <ReactPaginate
-                  previousLabel={"Previous"}
-                  nextLabel={"Next"}
-                  pageCount={pageCount}
-                  onPageChange={handlePageClick}
-                  containerClassName={"pagination"}
-                  activeClassName={"active"}
-                  forcePage={pageNumber}
-              />
+          <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={handlePageClick}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+          forcePage={pageNumber}
+          marginPagesDisplayed={2} // تعداد خانه‌های نخست و آخر
+        />
           </div>
       </div>
   )

@@ -45,3 +45,22 @@
     outline: none;
   }
   
+
+  /* در وضعیت دسکتاپ */
+.pagination li {
+  display: inline-block;
+}
+
+/* در وضعیت موبایل */
+@media (max-width: 768px) {
+  .pagination li {
+    display: none;
+  }
+  .pagination li.active,
+  .pagination li:nth-child(1),
+  .pagination li:nth-child(2),
+  .pagination li:nth-last-child(1),
+  .pagination li:nth-last-child(2) {
+    display: inline-block;
+  }
+}

@@ -41,8 +41,10 @@ const All = () => {
           onPageChange={handlePageClick}
           containerClassName={"pagination"}
           activeClassName={"active"}
-           forcePage={pageNumber < compactPageCount ? pageNumber : compactPageCount - 1} // این خط را اضافه کنید
+          forcePage={pageNumber}
+          marginPagesDisplayed={2} // تعداد خانه‌های نخست و آخر
         />
+
       </div>
 
   
@@ -66,7 +68,8 @@ const All = () => {
           onPageChange={handlePageClick}
           containerClassName={"pagination"}
           activeClassName={"active"}
-          forcePage={pageNumber} // این خط را اضافه کنید
+          forcePage={pageNumber}
+          marginPagesDisplayed={2} // تعداد خانه‌های نخست و آخر
         />
       </div>
     </div>
