@@ -6,7 +6,7 @@ import DarkModeToggle from './Components/DarkModeToggle'
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <BrowserRouter>
         <Navbar />
         <div className=' pt-5 '>

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import GifPlayer from 'react-gif-player';
 // Fading text and Images
 import {FadeTextRight,FadeTextLeft,FadeTextTop,FadeTextDown} from '../Components/FadeText';
-import {FadeLeftImage , FadeRightImage} from '../Components/FadeImage';
+import {FadeLeftImage , FadeRightImage , FadebottomImage} from '../Components/FadeImage';
 import ImageComponent from '../Components/ImageAWS';
 
 // import { GoogleFonts } from 'react-google-fonts';
@@ -24,14 +24,12 @@ import Image_7 from '../assets/imag-landing-page/image-7.png'
 
 const Landing = () => {
 
-
-
   return (
-    <div  className=' LandingPage ' >
+    <div className='w-100 LandingPage  ' >
       
-      <div className='content '>
+      <div className='w-100 content container '>
         {/* These classes are DIV-1 for different styles in the index.css file */}
-        <div className='container-divs'>
+        <div className='w-100 container-divs '>
           <br />
           <br />
           <br />
@@ -41,16 +39,17 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className=' GlaceMorphism'>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      {/* -------------------- 1 ---------------- */}
-          <Row className=' container m-auto mt-5 flex-lg-wrap-reverse' >
-            <Col className='text-start order-1 order-lg-0' lg={6}>
+      <div className='w-100 GlaceMorphism  d-flex flex-column'>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* -------------------- 1 ---------------- */}
+        
+        <Row className='w-100 container m-auto mt-5 flex-lg-wrap-reverse' >
+          <Col className='text-start order-1 order-lg-0' lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
@@ -59,37 +58,37 @@ const Landing = () => {
               <p className='mt-5' ><FadeTextDown text={'We want to present you beautiful designs on this website'} /></p>
 
               <Link to={'/registerlogin/register'} className='btn border text-light' style={{backgroundColor:'#11ce31ba'}}>Register</Link>
-            </Col>
+          </Col>
 
-            <Col className='text-lg-end order-0 order-lg-1' lg={6}>
-              <FadeRightImage img={Image_1} />
-              <br />
-            </Col>
-          </Row>
+          <Col className='text-lg-end order-0 order-lg-1' lg={6}>
+            <FadebottomImage img={Image_1} />
+            <br />
+          </Col>
+        </Row>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
- {/* -------------------------------  2 -------------------------------------- */}
+        {/* -------------  2 ------------------- */}
 
          
 
-          <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto mt-5'>
 
             <Col className='text-lg-start'lg={6}>
-              <FadeLeftImage img={Image_2} />
+              <FadebottomImage img={Image_2} />
               
             </Col>
             <Col className='text-start'lg={6}>
@@ -101,30 +100,28 @@ const Landing = () => {
 
             </Col>
 
-          </Row>
+        </Row>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
-
-          {/* -----------------------------  3 ----------------------------------- */}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* -----------------------------  3 ----------------------------------- */}
 
           
 
 
-          <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto mt-5'>
             <Col className='text-start order-1 order-lg-0'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
@@ -134,33 +131,32 @@ const Landing = () => {
             </Col>
 
             <Col className='text-lg-end order-0 order-lg-1'lg={6}>
-              <FadeRightImage img={Image_3} />
+              <FadebottomImage img={Image_3} />
             </Col>
-          </Row>
+        </Row>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-
-          {/* -----------------------------   4   ------------------------------ */} 
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        {/* -----------------------------   4   ------------------------------ */} 
 
         
 
 
-          <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto mt-5'>
             <Col className='text-start'lg={6}>
-              <FadeLeftImage img={Image_4} />
+              <FadebottomImage img={Image_4} />
             </Col>
             <Col className='text-lg-start'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
@@ -172,29 +168,29 @@ const Landing = () => {
 
             </Col>
 
-          </Row>
+        </Row>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
           
-          {/* -----------------------------   5    ---------------------------------- */}
+        {/* -----------------------------   5    ---------------------------------- */}
          
 
 
-          <Row className=' container m-auto mt-5' >
+        <Row className=' container m-auto mt-5' >
             <Col className='text-start order-1 order-lg-0'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'APW 4'} /></h1>
@@ -204,31 +200,31 @@ const Landing = () => {
             </Col>
 
             <Col className='text-lg-end order-0 order-lg-1'lg={6}>
-              <FadeRightImage img={Image_5} />
+              <FadebottomImage img={Image_5} />
             </Col>
-          </Row>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        </Row>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
 
-            {/* -----------------------------   6    ---------------------------------- */}
+        {/* -----------------------------   6    ---------------------------------- */}
 
-          <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto mt-5'>
 
             <Col className='text-lg-start'lg={6}>
-              <FadeLeftImage img={Image_6} />
+              <FadebottomImage img={Image_6} />
             </Col>
             <Col className='text-start'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
@@ -238,27 +234,27 @@ const Landing = () => {
 
             </Col>
 
-          </Row>
+        </Row>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
           
-          {/* -----------------------------   7    ---------------------------------- */}
+        {/* -----------------------------   7    ---------------------------------- */}
           
-          <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto mt-5'>
             <Col className='text-start order-1 order-lg-0'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mars'} /></h1>
@@ -268,24 +264,24 @@ const Landing = () => {
             </Col>
 
             <Col className='text-lg-end order-0 order-lg-1'lg={6}>
-                <FadeRightImage img={Image_7} />
+                <FadebottomImage img={Image_7} />
             </Col>
-          </Row>
+        </Row>
 
-          {/* ----------------------------- 8 ---------------------- */}
+        {/* ----------------------------- 8 ---------------------- */}
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
-
+        {/* End glace morphisme */}
       </div>
 
 

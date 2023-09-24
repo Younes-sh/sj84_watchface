@@ -7,9 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Dotenv
 
 
-// استفاده از متغیرهای محیطی در کد
-const apiUrl = process.env.REACT_APP_URL_API; // متغیر BACK_END_PORT از فایل .env
-console.log(`API URL: ${apiUrl}`);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

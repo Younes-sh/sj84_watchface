@@ -93,6 +93,7 @@ code {
   width: 300px;
   height: 300px;
   margin: 0 -920px;
+  position: absolute;
   background-color: brown;
   filter: blur(30px);
   animation: DIV-1 infinite 15s forwards alternate; 
@@ -106,9 +107,10 @@ code {
 }
 
 .content .DIV-2 {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: -400px 70px;
+  position: absolute;
   background-color: rgb(75, 145, 28);
   filter: blur(30px);
   animation:  DIV-2 infinite 20s  alternate; 
@@ -125,6 +127,7 @@ code {
   margin: 600px -600px;
   background-color: rgb(141, 28, 145);
   filter: blur(30px);
+  position: absolute;
   animation: DIV-2 infinite 15s  alternate ; 
 }
 @keyframes DIV-3 {

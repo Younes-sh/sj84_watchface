@@ -41,7 +41,7 @@ const FadebottomImage = ({img}) => {
  
   return (
     <div>
-      <Fade left>
+      <Fade bottom>
         <img style={{width:'400px'}} src={img} alt="" />
       </Fade>
     </div>

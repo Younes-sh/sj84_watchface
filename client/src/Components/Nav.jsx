@@ -9,9 +9,9 @@ import user_icon from '../assets/icons/user-icon.png'
 function BasicExample() {
   const iconPage = 'https://d33bq1v1gicys9.cloudfront.net/300x300/e392ce0cd6e8787f235380b188441f61_avatar.jpg';
   return (
-    <Navbar expand="lg"  className= "bg-dark position-fixed w-100 NAVBAR">
+    <Navbar   className="w-100  bg-dark position-fixed  NAVBAR">
       <Container>
-        <Link to="/" style={{textDecoration:'none' }} className='text-light'><img src={iconPage} alt="SJ"  style={{width:'50px' , borderRadius:'50%'}} /></Link>
+        <Link to="/" style={{textDecoration:'none' }} className='text-light'><img src={iconPage} alt="SJ"  style={{width:'40px' , borderRadius:'50%'}} /></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='text-bg-light'/>
         <Navbar.Collapse id="basic-navbar-nav" className=''>
           <Nav className="me-auto NAVBAR">
@@ -33,7 +33,7 @@ function BasicExample() {
         </Navbar.Collapse>
  
         <NavLink className='text-decoration-none mx-3 text-light ' to="/registerlogin">
-          <img style={{width:'50px'}} src={user_icon} alt="user" />
+          <img style={{width:'40px'}} src={user_icon} alt="user" />
         </NavLink>
       </Container>
     </Navbar>
