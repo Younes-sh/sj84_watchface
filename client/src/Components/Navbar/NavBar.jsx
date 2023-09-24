@@ -15,7 +15,7 @@ function NavScrollExample() {
             <Navbar expand="lg" className="bg-dark NAVBAR">
   
   <Container fluid className='text-light'>
-  <Link to="/" style={{textDecoration:'none' }} className='text-light'><img src={iconPage} alt="watch"  style={{width:'30px' , borderRadius:'50%'}} /></Link>
+  <Link to="/" style={{textDecoration:'none' }} className='text-light'><img src={iconPage} alt="watch"  style={{width:'50px' , borderRadius:'50%'}} /></Link>
       <Navbar.Toggle aria-controls="navbarScroll" className='text-light'/>
       <Navbar.Collapse id="navbarScroll" className=''>
       <Nav
