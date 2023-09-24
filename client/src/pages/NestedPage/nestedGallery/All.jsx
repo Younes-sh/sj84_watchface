@@ -10,6 +10,7 @@ const All = () => {
   const itemsPerPage = 24; // تعداد آیتم‌ها در هر صفحه
   
   const URL = process.env.REACT_APP_URL_API;
+  const compactPageCount = 5; // تعداد صفحات نمایش داده شده در حالت Compact
 
   useEffect(() => {
     // ارسال درخواست به بک‌اند و دریافت لیست کاربران
@@ -28,10 +29,11 @@ const All = () => {
     setPageNumber(selected);
   };
 
+
   return (
     <div className='pt-5'>
    
-      <div className='pagination-container'>
+      <div className='w-75 m-auto pagination-container '>
         <ReactPaginate
           previousLabel={"Previous"}
           nextLabel={"Next"}
@@ -39,9 +41,13 @@ const All = () => {
           onPageChange={handlePageClick}
           containerClassName={"pagination"}
           activeClassName={"active"}
-          forcePage={pageNumber} // این خط را اضافه کنید
+           forcePage={pageNumber < compactPageCount ? pageNumber : compactPageCount - 1} // این خط را اضافه کنید
         />
       </div>
+
+  
+
+
       <div className="d-flex flex-wrap justify-content-center container">
         {items
           .slice(
@@ -50,7 +56,9 @@ const All = () => {
           )
           .map(item => <CardSmall key={item.id} {...item} />)}
       </div>
-      <div className='pagination-container'>
+
+
+      <div className='w-75 m-auto pagination-container'>
         <ReactPaginate
           previousLabel={"Previous"}
           nextLabel={"Next"}
