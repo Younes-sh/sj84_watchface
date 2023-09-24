@@ -18,7 +18,7 @@ const Collection = () => {
   }, []); // [] به منظور اجرای این افعال فقط یکبار در هنگام نمایش کامپوننت
 
   return (
-    <div className='Collection pt-5'>
+    <div className='Collection  pt-5'>
 
       <div className='Background pt-5'>
         <div className='positionFixed'>
@@ -27,7 +27,7 @@ const Collection = () => {
 
       <div className='Main pt-5'>
 
-        <div className='w-100 h-100 pt-5 d-flex flex-wrap justify-content-center'>
+        <div className='w-100 h-100 container pt-5 d-flex flex-wrap justify-content-center'>
           {
             items.map(item => <CardCollection key={item.id} {...item} />)
           }
