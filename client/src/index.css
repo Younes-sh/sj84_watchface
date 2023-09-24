@@ -15,11 +15,16 @@ code {
 /* NAVBAR */
 .NAVBAR {
   z-index: 9;
+  position: fixed;
 }
 
 .NAVBAR .active {
   border-bottom: solid 2px #ccc;
   
+}
+.NAVBAR .navbar-toggler{
+  color: #00ffd5;
+  background: #ccc;
 }
 
 /* Collection Page */

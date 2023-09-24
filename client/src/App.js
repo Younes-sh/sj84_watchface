@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Nav';
+import Navbar from './Components/Navbar/NavBar';
 import Routing from './routes/Routing';
 import DarkModeToggle from './Components/DarkModeToggle'
 
