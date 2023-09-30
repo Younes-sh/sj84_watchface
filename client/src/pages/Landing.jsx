@@ -107,7 +107,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar 62'} /></h4> */}
-              <p className='mt-5' ><FadeTextDown text={'What\'s better than having a wrist computer with you?! A computer that, in addition to elegance and beautiful designs, has GPS and a toolbox of pressure gauges and oxygen meters Beautiful designs in several watch models, of course with free designs!'} /></p>
+              <p className='mt-5' ><FadeTextDown text={'What\'s better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'} /></p>
 
             </Col>
 
