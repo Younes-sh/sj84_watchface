@@ -50,14 +50,10 @@ const Landing = () => {
         
         <Row className='w-100 container m-auto mt-5 flex-lg-wrap-reverse' >
           <Col className='text-start order-1 order-lg-0' lg={6}>
-              {/* <GoogleFonts font='Open Sans' /> */}
-              <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
-              {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'It is beautiful that the classic designs still maintain their place among digital watches and a large part of the designs of these new and eye-catching watches are dedicated to themselves.!'} /></p>
-
-              <p className='mt-5' ><FadeTextDown text={'We want to present you beautiful designs on this website'} /></p>
-
-              <Link to={'/registerlogin/register'} className='btn border text-light' style={{backgroundColor:'#11ce31ba'}}>Register</Link>
+            {/* <GoogleFonts font='Open Sans' /> */}
+            <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
+            {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
+            <p className='mt-5 aliegnText' ><FadeTextDown text={'It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large partof the designs of these new and eye-catching wathes'} /></p>
           </Col>
 
           <Col className='text-lg-end order-0 order-lg-1' lg={6}>
@@ -88,8 +84,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Polygon v.2 Hybride'} /> </h1>
               {/* <h5 className='mt-5'  style={{fontFamily:'Open Sans'}}> <FadeTextDown text={'Mohsen Sheikhlar e'} /> </h5> */}
-              <p className='mt-5' ><FadeTextDown text={'Digital watches that quickly opened their place in people\'s hearts and lives and opened a new window for their owners.'} /></p>
-              <p className='mt-5 '><FadeTextDown text={'The main thing is that these are not just one watch! And they are equipped with practical devices'} /> </p>
+              <p className='mt-5' ><FadeTextDown text={'Digital watches that quickly opened their position in people\'s hearts and lives and provided a new window for their owners.The main point is that these are not just a watch because they are equipped with practical applications'} /></p>
 
             </Col>
 
