@@ -53,7 +53,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5' ><FadeTextDown text={'It is beautiful that the classic designs still maintain their place among digital watches and a large part of the designs of these new and eye-catching watches are dedicated to themselves.!'} /></p>
+              <p className='mt-5 aliegnText' ><FadeTextDown text={'It is beautiful that the classic designs still maintain their place among digital watches and a large part of the designs of these new and eye-catching watches are dedicated to themselves.!'} /></p>
 
               <p className='mt-5' ><FadeTextDown text={'We want to present you beautiful designs on this website'} /></p>
 
@@ -112,7 +112,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar 62'} /></h4> */}
-              <p className='mt-5' ><FadeTextDown text={'What\'s better than having a wrist computer with you?! A computer that, in addition to   elegance and beautiful designs, has GPS and a toolbox of pressure gauges and oxygen meters Beautiful designs in several watch models, of course with free designs!'} /></p>
+              <p className='mt-5' ><FadeTextDown text={'What\'s better than having a wrist computer with you?! A computer that, in addition to elegance and beautiful designs, has GPS and a toolbox of pressure gauges and oxygen meters Beautiful designs in several watch models, of course with free designs!'} /></p>
 
             </Col>
 
@@ -141,7 +141,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown  text={'Soul - Colorful copy'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5' ><FadeTextDown text={'Transfer your desired design to your phone with just one click Calm your soul and           connect with the designs that are sprouting in your heart, And look unique'} /></p>
+              <p className='mt-5' ><FadeTextDown text={'Transfer your desired design to your phone with just one click Calm your soul and connect with the designs that are sprouting in your heart, And look unique'} /></p>
 
               
 

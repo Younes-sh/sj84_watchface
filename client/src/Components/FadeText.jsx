@@ -6,7 +6,7 @@ const FadeTextRight = ({text}) => {
     return (
       <div>
         <Fade right cascade>
-          <p>{text}</p>
+          <p className='aliegnText'>{text}</p>
         </Fade>
       </div>
     );
@@ -18,7 +18,7 @@ const FadeTextLeft = ({text}) => {
   return (
     <div>
       <Fade left cascade>
-        <p>{text}</p>
+        <p  className='aliegnText'>{text}</p>
       </Fade>
     </div>
   );
@@ -30,7 +30,7 @@ const FadeTextTop = ({text}) => {
   return (
     <div>
       <Fade top cascade>
-        <p>{text}</p>
+        <p  className='aliegnText'>{text}</p>
       </Fade>
     </div>
   );
@@ -40,9 +40,9 @@ const FadeTextTop = ({text}) => {
 const FadeTextDown = ({text}) => {
  
   return (
-    <div>
+    <div className='FadeTextDown'>
       <Fade bottom cascade>
-        <p>{text}</p>
+        <p  className='aliegnText'>{text}</p>
       </Fade>
     </div>
   );
