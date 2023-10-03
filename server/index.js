@@ -2,7 +2,7 @@ process.env.NODE_ENV = "production";
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const path = require('path');
+// const path = require('path');
 require('dotenv').config(); // خواندن مقادیر از فایل .env
 
 const mongoose = require('mongoose');
