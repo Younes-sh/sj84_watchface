@@ -30,24 +30,6 @@ app.use(cors({
   credentials: true, // اجازه‌ی ارسال کوکی‌ها
 }));
 
-// const allowedOrigins = [
-//   'https://sj84-watchface.vercel.app',
-//   // دامنه‌های دیگر که مجاز هستند را اضافه کنید
-// ];
-
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-//       callback(null, true);
-//     } else {
-//       callback(new Error('Access denied by CORS'));
-//     }
-//   },
-//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//   credentials: true,
-// };
-// app.use(cors(corsOptions));
-
 app.use('/api/users' , userRouter);
 app.use('/api/items' , itemRouter);
 app.use('/api/gifs' , gifRouter);
@@ -61,15 +43,6 @@ app.use('/api/socialMedias', SocialMedia);
 app.get('/' , (req , res) => {
   res.send('Hello world')
 })
-
-// app.use(function (req, res) {
-//     res.setHeader('Content-Type', 'text/plain')
-//     res.write('you posted:\n')
-//     res.end(JSON.stringify(req.body, null, 2))
-// })
-
-// Connect to MongoDB
-// const databaseUrl = process.env.DATABASE_URI;
 
 
 MONGODB_URI = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@watch.ww1vfpo.mongodb.net/`
