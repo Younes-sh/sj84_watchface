@@ -11,6 +11,7 @@ function TextControlsExample() {
     comment: '', // کامنت را خالی کنید
   });
   const [errors, setErrors] = useState('');
+  const URL = process.env.REACT_APP_URL_API;
 
   const validationSchema = Yup.object().shape({
     // email: Yup.string().email('Enter a valid email address').required('Email field is required'),
@@ -39,7 +40,7 @@ function TextControlsExample() {
             popup: 'animate__animated animate__fadeOutUp',
           },
         });
-        axios.post(`http://localhost:5000/api/confirmcomments`, comment);
+        axios.post(`${URL}/api/confirmcomments`, comment);
 
         // پس از ارسال موفقیت‌آمیز نظر، فیلدهای ایمیل، نام و کامنت را خالی کنید
         setComment({

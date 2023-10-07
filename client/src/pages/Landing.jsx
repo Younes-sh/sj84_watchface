@@ -53,7 +53,7 @@ const Landing = () => {
             {/* <GoogleFonts font='Open Sans' /> */}
             <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
             {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-            <p className='mt-5 aliegnText' ><FadeTextDown text={'It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large partof the designs of these new and eye-catching wathes'} /></p>
+            <FadeTextDown text={'It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large part of the designs of these new and eye-catching watches'} />
           </Col>
 
           <Col className='text-lg-end order-0 order-lg-1' lg={6}>
@@ -84,7 +84,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Polygon v.2 Hybride'} /> </h1>
               {/* <h5 className='mt-5'  style={{fontFamily:'Open Sans'}}> <FadeTextDown text={'Mohsen Sheikhlar e'} /> </h5> */}
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'Digital watches that quickly opened their position in people\'s hearts and lives and provided a new window for their owners.The main point is that these are not just a watch because they are equipped with practical applications'} /></p>
+              <FadeTextDown text={'Digital watches quickly opened their position in people\'s hearts and lives, providing a new window for their owners. The main point is that these are not just watches; they are equipped with practical applications.'} />
 
             </Col>
 
@@ -107,7 +107,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar 62'} /></h4> */}
-              <p className='mt-5 aliegnText ' ><FadeTextDown text={'What\'s better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'} /></p>
+              <FadeTextDown text={'What\'s better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'} />
 
             </Col>
 
@@ -136,7 +136,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown  text={'Soul - Colorful copy'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'Transfer your desired design to your phone with just one click Calm your soul and connect with the designs that are sprouting in your heart, And look unique'} /></p>
+              <FadeTextDown text={'Transfer your desired design to your phone with just one click Calm your soul and connect with the designs that are sprouting in your heart, And look unique'} />
 
               
 
@@ -162,7 +162,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'APW 4'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can\'t be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones'} /></p>
+             <FadeTextDown text={'Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can\'t be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones'} />
 
             </Col>
 
@@ -189,7 +189,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Jungle 1'} /></h1>
               {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'We have created impressive designs for you to have in your hands with several beautiful photos in one beautiful photo frame, This is the magic of the digital watch that you will have everything you want in your hands'} /></p>
+            <FadeTextDown text={'We have created impressive designs for you to have in your hands with several beautiful photos in one beautiful photo frame, This is the magic of the digital watch that you will have everything you want in your hands'} />
 
             </Col>
 
@@ -211,7 +211,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mars'} /></h1>
               <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'We are not alone'} /></h4>
-              <p className='mt-5 aliegnText' ><FadeTextDown text={'Enjoy by installing the app within the watch and enjoy personalizing the options in the designs. Touch the future ahead of you and think ambitiously and walk with pride.'} /></p>
+              <FadeTextDown text={'Enjoy by installing the app within the watch and enjoy personalizing the options in the designs. Touch the future ahead of you and think ambitiously and walk with pride.'} />
 
             </Col>
 
