@@ -38,7 +38,9 @@ code {
   height: 100vh;
   top: 0;
   z-index: 1;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+  background: rgb(175,88,245);
+background: linear-gradient(133deg, rgb(150, 83, 206) 0%, rgb(2, 6, 97) 100%);
   position: fixed;
 }
 
