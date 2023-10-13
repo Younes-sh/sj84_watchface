@@ -27,7 +27,7 @@ const Collection = () => {
 
       <div className='Main pt-5'>
 
-        <div className='w-100 h-100 container pt-5 d-flex flex-wrap justify-content-center'>
+        <div className='w-75 h-100 m-auto  pt-5 d-flex b-shadow flex-wrap justify-content-center '>
           {
             items.map(item => <CardCollection key={item.id} {...item} />)
           }

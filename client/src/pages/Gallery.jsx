@@ -2,7 +2,6 @@ import { Outlet , Link , NavLink , useNavigate} from 'react-router-dom';
 import { useEffect , useState } from 'react';
 import axios from 'axios';
 import DefaultImage from '../assets/Image-Register-page/watch.jpeg';
-import CopyAddress from '../Components/CopyAddress/CopyAddress';
 
 const Gallery = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
