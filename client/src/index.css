@@ -332,3 +332,19 @@ backdrop-filter: blur( 4px );
   user-select: none;
   word-spacing: -0.1em; */
 }
+
+.Pharagraph {
+  width: 100%;
+  padding: 5px;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+

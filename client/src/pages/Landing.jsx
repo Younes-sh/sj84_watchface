@@ -9,7 +9,7 @@ import GifPlayer from 'react-gif-player';
 import {FadeTextRight,FadeTextLeft,FadeTextTop,FadeTextDown} from '../Components/FadeText';
 import {FadeLeftImage , FadeRightImage , FadebottomImage} from '../Components/FadeImage';
 import ImageComponent from '../Components/ImageAWS';
-
+import Fadin from '../Components/FadIn/Fadin';
 // import { GoogleFonts } from 'react-google-fonts';
 // import ParallaxScrollOne from '../Components/ParallaxScrollOne';
 
@@ -52,8 +52,9 @@ const Landing = () => {
           <Col className='text-start order-1 order-lg-0' lg={6}>
             {/* <GoogleFonts font='Open Sans' /> */}
             <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
-            {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-            <FadeTextDown text={'It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large part of the designs of these new and eye-catching watches'} />
+            <Fadin>
+              <p>It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large part of the designs of these new and eye-catching watches</p>
+            </Fadin>
           </Col>
 
           <Col className='text-lg-end order-0 order-lg-1' lg={6}>
@@ -83,9 +84,9 @@ const Landing = () => {
             <Col className='text-start'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Polygon v.2 Hybride'} /> </h1>
-              {/* <h5 className='mt-5'  style={{fontFamily:'Open Sans'}}> <FadeTextDown text={'Mohsen Sheikhlar e'} /> </h5> */}
-              <FadeTextDown text={'Digital watches quickly opened their position in people\'s hearts and lives, providing a new window for their owners. The main point is that these are not just watches; they are equipped with practical applications.'} />
-
+             <Fadin>
+             <p className='fade-in-text'>Digital watches quickly opened their position in people\'s hearts and lives, providing a new window for their owners. The main point is that these are not just watches; they are equipped with practical applications.</p>
+             </Fadin>
             </Col>
 
         </Row>
@@ -106,8 +107,11 @@ const Landing = () => {
             <Col className='text-start order-1 order-lg-0'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
-              {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar 62'} /></h4> */}
-              <FadeTextDown text={'What\'s better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'} />
+              <Fadin>
+                <p>
+                'What\'s better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'
+                </p>
+              </Fadin>
 
             </Col>
 
@@ -135,8 +139,9 @@ const Landing = () => {
             <Col className='text-lg-start'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown  text={'Soul - Colorful copy'} /></h1>
-              {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-              <FadeTextDown text={'Transfer your desired design to your phone with just one click Calm your soul and connect with the designs that are sprouting in your heart, And look unique'} />
+              <Fadin>
+                <p>Transfer your desired design to your phone with just one click Calm your soul and connect with the designs that are sprouting in your heart, And look unique</p>
+              </Fadin>
 
               
 
@@ -161,9 +166,9 @@ const Landing = () => {
             <Col className='text-start order-1 order-lg-0'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'APW 4'} /></h1>
-              {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-             <FadeTextDown text={'Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can\'t be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones'} />
-
+              <Fadin>
+                <p>Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can\'t be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones</p>
+              </Fadin>
             </Col>
 
             <Col className='text-lg-end order-0 order-lg-1'lg={6}>
@@ -188,9 +193,9 @@ const Landing = () => {
             <Col className='text-start'lg={6}>
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Jungle 1'} /></h1>
-              {/* <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mohsen Sheikhlar'} /></h4> */}
-            <FadeTextDown text={'We have created impressive designs for you to have in your hands with several beautiful photos in one beautiful photo frame, This is the magic of the digital watch that you will have everything you want in your hands'} />
-
+            <Fadin>
+              <p>We have created impressive designs for you to have in your hands with several beautiful photos in one beautiful photo frame, This is the magic of the digital watch that you will have everything you want in your hands</p>
+            </Fadin>
             </Col>
 
         </Row>
@@ -211,8 +216,9 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Mars'} /></h1>
               <h4 className='mt-5'  style={{fontFamily:'Open Sans'}}><FadeTextDown text={'We are not alone'} /></h4>
-              <FadeTextDown text={'Enjoy by installing the app within the watch and enjoy personalizing the options in the designs. Touch the future ahead of you and think ambitiously and walk with pride.'} />
-
+              <Fadin>
+                <p>Enjoy by installing the app within the watch and enjoy personalizing the options in the designs. Touch the future ahead of you and think ambitiously and walk with pride.</p>
+              </Fadin>
             </Col>
 
             <Col className='text-lg-end order-0 order-lg-1'lg={6}>

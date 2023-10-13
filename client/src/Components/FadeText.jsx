@@ -42,7 +42,7 @@ const FadeTextDown = ({text}) => {
   return (
     <div className='FadeTextDown'>
       <Fade bottom cascade>
-        <p style={{whiteSpace:'break-spaces'}} >{text}</p>
+        <p className='Pharagraph'>{text}</p>
       </Fade>
     </div>
   );
