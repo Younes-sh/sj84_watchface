@@ -11,15 +11,15 @@ const  WearOs = 'https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/4
 
 const Header = () => {
   return (
-    <div className='w-100 h-auto p-5  bg-dark text-light d-flex flex-column justify-content-center'>
-        <h1 className='  mt-lg-5'>We have put together the <span className='text-warning'>Best Collection</span></h1>
-        <h1>of design in the world</h1>
+    <div className='HEADER   text-light d-flex flex-column justify-content-center'>
+        <h1 className='text-center  mt-lg-5'>We have put together the <span className='text-warning'>Best Collections</span></h1>
+        <h1 className='text-center'>of designs in the world</h1>
         
 
-        <div className='w-100 h-100 mt-5 d-flex  justify-content-center'>
-            <span className='px-5'><img   src={Samsung} alt="Samsung" /></span>
-            <span className='px-5'><img className='w-75' src={Apple} alt="Apple" /></span>
-            <span className='px-5'><img style={{width:'70px'}} src={WearOs} alt="wearos" /></span>
+        <div className='w-70 m-auto   mt-5 d-flex  justify-content-center align-items-center'>
+            <span className='px-5'><img style={{width:'70%'}} src={Samsung} alt="Samsung" /></span>
+            <span className='px-5'><img style={{width:'50%'}} src={Apple} alt="Apple" /></span>
+            {/* <span className='px-5'><img style={{width:'10%',backgroundColor:'red'}} src={WearOs} alt="wearos" /></span> */}
         </div>
         <div className='Container-watch'>
           <img className='Buda  ' src={Buda} alt="Buda" />
