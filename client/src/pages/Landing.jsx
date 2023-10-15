@@ -25,9 +25,9 @@ import Image_7 from '../assets/imag-landing-page/image-7.png'
 const Landing = () => {
 
   return (
-    <div className='w-100 LandingPage  ' >
+    <div className=' LandingPage  ' >
       
-      <div className='w-100 content container '>
+      <div className=' content-animation  '>
         {/* These classes are DIV-1 for different styles in the index.css file */}
         <div className='w-100 container-divs '>
           <br />
@@ -39,8 +39,8 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className='w-100 GlaceMorphism  d-flex flex-column'>
-        <Header />
+      <div className=' GlaceMorphism  d-flex flex-column'>
+        <Header  />
         <br />
         <br />
         <br />
@@ -49,7 +49,7 @@ const Landing = () => {
         <br />
         {/* -------------------- 1 ---------------- */}
         
-        <Row className='w-100 container m-auto mt-5 flex-lg-wrap-reverse' >
+        <Row className=' container m-auto mt-5 flex-lg-wrap-reverse' >
           <Col className='text-start order-1 order-lg-0' lg={6}>
             {/* <GoogleFonts font='Open Sans' /> */}
             <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
@@ -76,7 +76,7 @@ const Landing = () => {
 
          
 
-        <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto  mt-5'>
 
             <Col className='text-lg-start'lg={6}>
               <FadebottomImage img={Image_2} />
@@ -133,7 +133,7 @@ const Landing = () => {
         
 
 
-        <Row className=' container m-auto mt-5'>
+        <Row className=' container m-auto  mt-5'>
             <Col className='text-start'lg={6}>
               <FadebottomImage img={Image_4} />
             </Col>
