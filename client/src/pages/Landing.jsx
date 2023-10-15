@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 // Responsive react-Bootstrap 5
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import Header from '../Components/Header/Header';
 // GifPlayer is a package for running GIFs
 import GifPlayer from 'react-gif-player';
 // Fading text and Images
@@ -40,6 +40,7 @@ const Landing = () => {
       </div>
 
       <div className='w-100 GlaceMorphism  d-flex flex-column'>
+        <Header />
         <br />
         <br />
         <br />
