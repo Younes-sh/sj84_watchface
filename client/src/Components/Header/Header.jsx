@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className='w-100 h-auto p-5  bg-dark text-light d-flex flex-column justify-content-center'>
         <h1 className='  mt-lg-5'>We have put together the <span className='text-warning'>Best Collection</span></h1>
-        <h1>of watches in the world</h1>
+        <h1>of design in the world</h1>
         
 
         <div className='w-100 h-100 mt-5 d-flex  justify-content-center'>
