@@ -1,3 +1,11 @@
+.HEADER {
+    width: 100%;
+    padding-top: 50px;
+    background-color: rgb(33,37,41);
+}
+.HEADER h1 {
+    font-size: 50px;
+}
 .Container-watch {
     width: 100%;
     height: 500px;
@@ -19,64 +27,78 @@
     /* margin-top: 30px;
     margin-left: 280px; */
     z-index: 4;
-    transform: rotate(20deg);
+    
     animation: buda forwards 3s;
 }
 @keyframes buda {
     from {margin-top: 0;
-        margin-left: 0;}
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
     to{
         margin-top: 30px;
         margin-left: 280px;
+        transform: rotate(20deg);
     }
 }
 .Hack {
     margin-top: 30px;
     margin-right: 280px;
     z-index: 4;
-    transform: rotate(-20deg);
-    animation: hack alternate 3s;
+    animation: hack forwards 3s;
 }
 @keyframes hack {
     from {margin-top: 0;
-        margin-right: 0;}
+        margin-right: 0;
+        transform: rotate(0deg);
+    }
     to{
         margin-top: 30px;
         margin-right: 280px;
+        transform: rotate(-20deg);
     }
 }
 .Roma {
     margin-top: 90px;
     margin-left: 490px;
     z-index: 3;
-    transform: rotate(45deg);
-    animation: roma alternate 3s;
+    
+    animation: roma forwards 3s;
 }
 @keyframes roma {
     from {margin-top: 0;
-        margin-left: 0;}
+        margin-left: 0;
+        transform: rotate(0deg);
+    }
     to{
         margin-top: 90px;
         margin-left: 490px;
+        transform: rotate(45deg);
     }
 }
 .Analog {
     margin-top: 90px;
     margin-right: 490px;
     z-index: 3;
-    transform: rotate(-45deg);
-    animation: analog alternate 3s;
+    
+    animation: analog forwards 3s;
 }
 @keyframes analog {
     from {margin-top: 0;
-        margin-right: 0;}
+        margin-right: 0;
+        transform: rotate(0deg);
+    }
     to{
         margin-top: 90px;
         margin-right: 490px;
+        transform: rotate(-45deg);
     }
 }
 
 @media screen and (max-width:1200px) {
+    .HEADER h1 {
+        font-size: 30px;
+    }
     .Container-watch img {
         width: 300px;
     }
@@ -87,10 +109,13 @@
     }
     @keyframes buda {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-left: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 30px;
             margin-left: 170px;
+            transform: rotate(35deg);
         }
     }
     .Hack {
@@ -100,10 +125,13 @@
     }
     @keyframes hack {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-right: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 30px;
-        margin-right: 170px;
+            margin-right: 170px;
+            transform: rotate(-35deg);
         }
     }
     .Roma {
@@ -114,93 +142,131 @@
     }
     @keyframes roma {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-left: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 80px;
-            margin-left: 280px;
+            margin-left: 400px;
+            transform: rotate(45deg);
         }
     }
     .Analog {
-        margin-top: 80px;
         margin-right: 280px;
         transform: rotate(-55deg);
     }
     @keyframes analog {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-right: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 80px;
-            margin-right: 280px;
+            margin-right: 400px;
+            transform: rotate(-45deg);
         }
     }
 }
 
 @media screen and (max-width: 992px) {
+  
+    .Container-watch {
+        height: 300px;
+    }
     .Container-watch img {
         width: 300px;
     }
-    .Buda {
-        margin-top: 30px;
-        margin-left: 120px;
-       
-    }
+ 
     @keyframes buda {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-left: 0;
+            transform: rotate(0deg);
+        }
+            
         to{
             margin-top: 30px;
             margin-left: 120px;
+            transform: rotate(30deg);
         }
     }
-    .Hack {
-        margin-top: 30px;
-        margin-right: 120px;
-       
-    }
+ 
     @keyframes hack {
         from {margin-top: 0;
-            margin-right: 0;}
+            margin-right: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 30px;
             margin-right: 120px;
+            transform: rotate(-30deg);
         }
     }
-    .Roma {
-        margin-top: 70px;
-        margin-left: 200px;
-        transform: rotate(55deg);
-       
-    }
+ 
     @keyframes roma {
         from {margin-top: 0;
-            margin-left: 0;}
+            margin-left: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 70px;
-        margin-left: 200px;
+            margin-left: 250px;
+            transform: rotate(50deg);
         }
     }
-    .Analog {
-        margin-top: 70px;
-        margin-right: 200px;
-        transform: rotate(-55deg);
-    }
+  
     @keyframes analog {
         from {margin-top: 0;
-            margin-right: 0;}
+            margin-right: 0;
+            transform: rotate(0deg);
+        }
         to{
             margin-top: 70px;
-        margin-right: 200px;
+            margin-right: 250px;
+            transform: rotate(-50deg);
         }
     }
 }
 
-@media screen and (max-width:768px) {
-    h1 {
+@media screen and (max-width:674px) {
+    .HEADER h1 {
         font-size: 20px;
         text-align: center;
     }
+    .Container-watch {
+        margin-top: 90px;
+    }
     .Container-watch img {
-        width: 300px;
+        width: 200px;
+    }
+    .Roma {
+        display: none;
+    }
+    .Analog {
+        display: none;
+    }
+}
+@media screen and (max-width:576px) {
+    .Container-watch img {
+        width: 150px;
+    }
+    .Roma {
+        display: none;
+    }
+    .Analog {
+        display: none;
+    }
+}
+
+@media screen and (max-width:327px) {
+    .HEADER h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .Container-watch {
+        height: 180px;
+    }
+    .Container-watch img {
+        width: 100px;
     }
     .Buda {
         margin-top: 30px;
@@ -222,17 +288,6 @@
         margin-top: 70px;
         margin-right: 200px;
         transform: rotate(-55deg);
-    }
-}
-@media screen and (max-width:576px) {
-    .Container-watch img {
-        width: 100px;
-    }
-    .Roma {
-        display: none;
-    }
-    .Analog {
-        display: none;
     }
 }
 
