@@ -40,7 +40,7 @@ function NavScrollExample() {
             </Nav>
             <Form className="d-flex">
               <NavLink className='text-decoration-none mx-2 text-light ' to="/registerlogin">
-                  {/* <img style={{width:'40px'}} src={user_icon} alt="user" /> */}
+                  <img style={{width:'40px'}} src={user_icon} alt="user" />
               </NavLink>
             </Form>
             </Navbar.Collapse>
