@@ -54,7 +54,7 @@ const Landing = () => {
             {/* <GoogleFonts font='Open Sans' /> */}
             <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Analog M'} /> </h1>
             <Fadin>
-              <p>It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large part of the designs of these new and eye-catching watches</p>
+              <p className=''>It is great that the classic designs still maintain their place among digital watches, and they have been dedicated a large part of the designs of these new and eye-catching watches</p>
             </Fadin>
           </Col>
 
@@ -86,7 +86,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Polygon v.2 Hybride'} /> </h1>
              <Fadin>
-             <p className='fade-in-text'>Digital watches quickly opened their position in people\'s hearts and lives, providing a new window for their owners. The main point is that these are not just watches; they are equipped with practical applications.</p>
+             <p className='fade-in-text'>Digital watches quickly opened their position in people's hearts and lives, providing a new window for their owners. The main point is that these are not just watches; they are equipped with practical applications.</p>
              </Fadin>
             </Col>
 
@@ -110,7 +110,7 @@ const Landing = () => {
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'Tirdad - Summer'} /></h1>
               <Fadin>
                 <p>
-                'Whats better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'
+                Whats better than having a wrist computer with you? A computer that, in addition to elegance and beautiful designs, includes GPS and a toolbox of pressure gauges and oxygen meters. We offer beautiful designs across several watch models, all with free designs!'
                 </p>
               </Fadin>
 
@@ -168,7 +168,7 @@ const Landing = () => {
               {/* <GoogleFonts font='Open Sans' /> */}
               <h1 style={{fontFamily:'Open Sans'}}><FadeTextDown text={'APW 4'} /></h1>
               <Fadin>
-                <p>Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can\'t be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones</p>
+                <p>Of course, we did not forget Apple Watch owners and created beautiful and free designs for them  You can't be without apple and experience being stylishو For this reason, we created 3D designs and concept designs for you dear ones</p>
               </Fadin>
             </Col>
 

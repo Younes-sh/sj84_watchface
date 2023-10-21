@@ -23,9 +23,16 @@ body {
   background-color: red;
 }
 
+.NAVBAR a {
+  border-bottom: none;
+}
 .NAVBAR .active {
-  border-bottom: solid 2px #ccc;
   
+  animation: activeMenu 2s forwards;
+}
+@keyframes activeMenu {
+  from{border-bottom: inset;}
+  to{border-bottom: solid 2px #ccc;}
 }
 .NAVBAR .navbar-toggler{
   color: #00ffd5;

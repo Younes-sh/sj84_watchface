@@ -29,9 +29,9 @@ class FadeIn extends Component {
   render() {
     const { visible } = this.state;
     return (
-      <div
+      <div style={{textAlign:'justify'}}
         ref={(el) => (this.fadeInRef = el)}
-        className={`fade-in ${visible ? 'is-visible' : ''}`}
+        className={`fade-in ${visible ? 'is-visible' : ''} `}
       >
         {this.props.children}
       </div>
